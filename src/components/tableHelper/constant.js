@@ -1,0 +1,14 @@
+export const NO_SORTING = 'normal';
+export const DESC = 'desc';
+export const ASC = 'asc';
+export const ID_NAME = '__cId';
+export const SORT_NAME = '__sortType';
+export const SCROLL_WIDTH = 17;
+export const DEFAULT_TABLE_HEADER_HEIGHT = 40;
+export const DEFAULT_TABLE_RECORD_HEIGHT = 30;
+export const DEFAULT_TABLE_HEIGHT = 300;
+export const DEFAULT_TABLE_WIDTH = 'inherit';
+export const TABLE_TYPE_COMMON = 'COMMON';
+export const TABLE_TYPE_RAFS = 'RAFS';
+export const TABLE_TYPE_VIRTUAL = 'VIRTUAL';
+export const VIRTUAL_REMAIN_COUNT = 2;
