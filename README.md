@@ -6,6 +6,8 @@ wiki, [Vue - Table表格渲染上千数据优化](https://zhuanlan.zhihu.com/p/5
 >Table enhancement with the thousands of data rendering: 
 add common table body with Reflow, requestAnimationFrame and virtual scroll enhancement
 
+![](https://github.com/devin-huang/devin-huang.github.io/blob/master/img/pubilc/vue-table-virtual/demo.png)
+
 ## Build Setup
 
 ``` bash
@@ -38,6 +40,8 @@ npm run build
 - `render`:  自定义渲染列，使用 [Vue 的 Render 函数](https://cn.vuejs.org/v2/guide/render-function.html#%E6%B7%B1%E5%85%A5-data-%E5%AF%B9%E8%B1%A1)
 
 ## Note
+
+![](https://github.com/devin-huang/devin-huang.github.io/blob/master/img/pubilc/vue-table-virtual/catalog.png)
 
 - 通过 Scroll 事件实时获取规定区域内的可视区间（最小值与最大值）从而优化 Table 渲染繁多性能问题
 - 支持初始配置 vue-table-optimize\src\components\tableHelper\constant.js
