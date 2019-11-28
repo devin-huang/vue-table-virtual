@@ -58,7 +58,9 @@
             let list = this.$refs['ul'];
             if (!list) return;
             list.forEach(e => {
-              e.scrollTop = val;
+              window.requestAnimationFrame(() => {
+                e.scrollTop = val;
+              });
             });
           });
         },
