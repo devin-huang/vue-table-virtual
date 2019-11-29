@@ -58,6 +58,16 @@ npm run build
   - 支持列数过多出现水平滚动条
   -  垂直滚动条的实现: 获取 Table 可视高度与实际内容高度仿得到 Table 垂直滚动条 Scroll.vue组件 （BUG: 在快速拖动的时候 watch 侦听的结果会有误差导致位置不对齐，解决方式：则直接获取真是滚动的数据）
 
+## 原理
+
+![](https://github.com/devin-huang/devin-huang.github.io/blob/master/img/pubilc/vue-table-virtual/work.jpg)
+
+- 通过初始配置 `constant.js` 再用上图计算获取Table显示最小高度 `Math.floor(scrollTop-remain / itemHeight) * itemHeight` 与最大高度 `Math.ceil((scrollTop+viewPort+remain) / itemHeight) * itemHeight` 
+
+- 使用最小高度与最大高度得到最小索引值与最大索引值区间并同时可以计算出每行数据位置 `translateY: index * itemHeight`
+
+- 最后是通过Scroll事件动态更新scrollTop同时使用lodash的 `findIndex()` 减去/添加数据从而实现上下拉滚动更新数据
+
 #### License
 
 [MIT](http://opensource.org/licenses/MIT)
